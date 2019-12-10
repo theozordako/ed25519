@@ -6,8 +6,8 @@
 
 #ed25519
 echo "Generating private key..."
-openssl genpkey -algorithm ed25519 -outform PEM -out private_ed25519.pem
+openssl genpkey -algorithm ed25519 -outform PEM -out privateKey.key
 
 # ed25519 public key
 echo "Generating public key..."
-openssl pkey -in private_ed25519.pem -pubout
+openssl pkey -in private_ed25519.pem -pubout > ed25519.pub

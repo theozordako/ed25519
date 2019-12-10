@@ -1,2 +1,2 @@
 #!/bin/bash
-openssl pkcs12 -export -out certificate.p12 -inkey privateKey.key -in certificate.crt -certfile more.crt
+openssl pkcs12 -export -out certificate.p12 -inkey privateKey.key -in certificate.crt
